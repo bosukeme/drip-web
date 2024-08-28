@@ -5,7 +5,7 @@ import Image from "next/image"
 
 function DeleteForm() {
     const [email, setEmail] = useState<string>("")
-    const [comment, setComment] = useState<string>("")
+    const [feedback, setFeeback] = useState<string>("")
     const [isLoading, setIsLoading] = useState<boolean>(false)
 
     const BASE_URL: string = process.env.NEXT_PUBLIC_BASE_URL as string
@@ -14,14 +14,14 @@ function DeleteForm() {
         e.preventDefault()
         setIsLoading(true);
 
-        fetch(BASE_URL + "/USER-submit-comment", {
+        fetch(BASE_URL + "/USER-submit-feedback", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
                 user_email:email,
-                comment:comment
+                feedback:feedback
             })
         })
         .then(response => {
@@ -47,7 +47,7 @@ function DeleteForm() {
         });
 
         setEmail("")
-        setComment("")
+        setFeeback("")
 
     }
 
@@ -85,8 +85,8 @@ function DeleteForm() {
                     rows={4}
                     
                     placeholder="comment"
-                    value={comment}
-                    onChange={(e) => setComment(e.target.value)}
+                    value={feedback}
+                    onChange={(e) => setFeeback(e.target.value)}
                     required
                     />
                 
