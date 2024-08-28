@@ -6,12 +6,14 @@ import Image from "next/image"
 function DeleteForm() {
     const [email, setEmail] = useState<string>("")
     const [isLoading, setIsLoading] = useState<boolean>(false)
+    
+    const BASE_URL: string = process.env.NEXT_PUBLIC_BASE_URL as string
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setIsLoading(true);
 
-        fetch("http://127.0.0.1:5001/USER-delete-user-email", {
+        fetch(BASE_URL + "/USER-delete-user-email", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -62,7 +64,7 @@ function DeleteForm() {
                     alt="driptok" 
                     width={90}
                     height={90}
-                    className="mb-10"
+                    className="mb-20"
                     priority
                 />
 
@@ -71,7 +73,8 @@ function DeleteForm() {
                     type="email"
                     placeholder="email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)} 
+                    onChange={(e) => setEmail(e.target.value)}
+                    required 
                     />
                 
                 <button
