@@ -84,7 +84,7 @@ function DeleteForm() {
                     className="bg-slate-100 border h-32 w-full px-4 rounded-lg mb-5"
                     rows={4}
                     
-                    placeholder="comment"
+                    placeholder="feedback"
                     value={feedback}
                     onChange={(e) => setFeeback(e.target.value)}
                     required
