@@ -16,7 +16,7 @@ export default function Navbar() {
                     className="text-black hover:text-gray-700"
                     href="/comment"
                 >
-                    Comment
+                    Feedback
                     <hr className="w-full mt-1 h-1 bg-black " />
                 </Link>
             </nav>

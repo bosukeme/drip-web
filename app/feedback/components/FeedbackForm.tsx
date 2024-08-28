@@ -56,7 +56,7 @@ function DeleteForm() {
             <h3 
                 className="font-bold text-2xl text-center mb-5"
             >
-                Comment Form 
+                Feedback 
             </h3>
             <form
                 onSubmit={handleSubmit}
