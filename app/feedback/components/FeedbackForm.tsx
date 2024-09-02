@@ -36,10 +36,10 @@ function DeleteForm() {
         
         })
         .then(data => {
-            alert("Comment sent successfully") 
+            alert("Feedback sent successfully") 
         })
         .catch(error => {
-            alert("Unable to send comment: " + error.message)
+            alert("Unable to send feedback: " + error.message)
         })
         .finally(() => {
             setIsLoading(false); 
