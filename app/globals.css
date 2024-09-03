@@ -13,3 +13,35 @@
 .bg-gradient-custom {
   background: linear-gradient(45deg, #ff69b4, #000000);
 }
+
+
+h2 {
+  font-size: 24px;
+  font-weight:bold;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size:20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 32px;
+  margin-bottom: 16px;
+}
+
+li {
+  padding-left: 10px;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem; /* 8px */
+}
