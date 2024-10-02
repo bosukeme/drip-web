@@ -230,7 +230,7 @@ export default function Privacy() {
             </h2>
 
             <p>
-                DripTok is not intended for use by children under the age of 13. We do not knowingly collect personal data from children under 13. If we learn that we have collected such data, we will take steps to delete it as soon as possible.
+                DripTok is not intended for use by children under the age of 16. We do not knowingly collect personal data from children under 16. If we learn that we have collected such data, we will take steps to delete it as soon as possible.
             </p>
 
             <h2>
